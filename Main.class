@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        // create a new DynamicArray of integers
+        DynamicArray<Integer> arr = new DynamicArray<>(5);
+ 
+        // add some elements to the array
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(5);
+ 
+        // iterate over the array using forEach and print each element
+        arr.forEach(System.out::println);
+ 
+        // remove an element at a specific index
+        arr.removeAt(3);
+ 
+        // iterate over the array using traverse and print each element along with its index
+        arr.traverse((index, element) -> System.out.println("Index: " + index + ", Element: " + element));
+    }
+}
